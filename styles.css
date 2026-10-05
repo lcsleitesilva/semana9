@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.controles {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.controles input,
+.controles select,
+.controles button {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.controles input {
+    flex: 1;
+}
+
+button {
+    padding: 8px 12px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+#product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    max-width: 200px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.highlight {
+    border: 4px solid #f5b400;
+    box-shadow: 0 0 15px #999;
+}
+
+.detalhes {
+    margin-top: 30px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#product-details {
+    padding: 10px;
+}
+
+@media (max-width: 600px) {
+    .controles {
+        flex-direction: column;
+    }
+}
